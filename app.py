@@ -119,10 +119,10 @@ def index_lulu():
         data.append(data_dict['datatable']['data'][i])
         data_df = pd.DataFrame(data, columns=columns)
 
-    f = open('%s.txt'%(app.vars['ticker_symbol']),'w')
-    f.write('Name: %s\n'%(app.vars['ticker_symbol']))
-    f.write(" ".join(variables))
-    f.close()
+#    f = open('%s.txt'%(app.vars['ticker_symbol']),'w')
+#    f.write('Name: %s\n'%(app.vars['ticker_symbol']))
+#    f.write(" ".join(variables))
+#    f.close()
         
     arguments = [app.vars[checkbox] for checkbox in variables]  
     hover = create_hover_tool()
